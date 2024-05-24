@@ -25,7 +25,7 @@ const AddNewItemButton = props => {
   const label = translateProperty(`${property.path}.addNewItem`, resource.id, {
     defaultValue: translateButton('addNewItem', resource.id)
   });
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_designSystem.Icon, {
+  return /*#__PURE__*/_react.default.createElement(_designSystem.Box, null, /*#__PURE__*/_react.default.createElement(_designSystem.Icon, {
     icon: "Add"
   }), label);
 };

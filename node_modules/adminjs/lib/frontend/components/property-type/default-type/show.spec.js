@@ -6,7 +6,7 @@ var _factoryGirl = _interopRequireDefault(require("factory-girl"));
 
 var _chai = require("chai");
 
-var _reactTestingLibrary = require("react-testing-library");
+var _react2 = require("@testing-library/react");
 
 var _show = _interopRequireDefault(require("./show"));
 
@@ -18,7 +18,7 @@ require("../../spec/record-json.factory");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const renderTestSubject = (property, record, resource) => (0, _reactTestingLibrary.render)( /*#__PURE__*/_react.default.createElement(_testContextProvider.default, null, /*#__PURE__*/_react.default.createElement(_show.default, {
+const renderTestSubject = (property, record, resource) => (0, _react2.render)( /*#__PURE__*/_react.default.createElement(_testContextProvider.default, null, /*#__PURE__*/_react.default.createElement(_show.default, {
   property: property,
   record: record,
   resource: resource

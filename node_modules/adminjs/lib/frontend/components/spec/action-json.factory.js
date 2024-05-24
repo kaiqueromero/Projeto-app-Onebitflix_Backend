@@ -10,6 +10,7 @@ _factoryGirl.default.define('ActionJSON', Object, {
   name: _factoryGirl.default.sequence('ActionJSON.name', n => `action${n}`),
   label: _factoryGirl.default.sequence('ActionJSON.label', n => `action ${n}`),
   showFilter: false,
+  showResourceActions: true,
   resourceId: 'resource',
   hideActionHeader: false,
   containerWidth: 1,

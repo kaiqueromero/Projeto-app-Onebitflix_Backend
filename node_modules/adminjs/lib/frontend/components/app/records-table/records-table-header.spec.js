@@ -2,7 +2,7 @@
 
 var _react = _interopRequireDefault(require("react"));
 
-var _reactTestingLibrary = require("react-testing-library");
+var _react2 = require("@testing-library/react");
 
 var _factoryGirl = _interopRequireDefault(require("factory-girl"));
 
@@ -23,7 +23,7 @@ describe('<RecordsTableHeader />', function () {
     });
     const {
       container
-    } = (0, _reactTestingLibrary.render)( /*#__PURE__*/_react.default.createElement(_testContextProvider.default, null, /*#__PURE__*/_react.default.createElement("table", null, /*#__PURE__*/_react.default.createElement(_recordsTableHeader.default, {
+    } = (0, _react2.render)( /*#__PURE__*/_react.default.createElement(_testContextProvider.default, null, /*#__PURE__*/_react.default.createElement("table", null, /*#__PURE__*/_react.default.createElement(_recordsTableHeader.default, {
       properties: [property],
       titleProperty: property,
       sortBy: this.sortBy,

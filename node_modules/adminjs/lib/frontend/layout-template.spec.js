@@ -29,7 +29,7 @@ describe('layoutTemplate', function () {
   });
   describe('AdminJS with branding options given', function () {
     const branding = {
-      softwareBrothers: false,
+      withMadeWithLove: false,
       companyName: 'Other name',
       favicon: '/someImage.png'
     };

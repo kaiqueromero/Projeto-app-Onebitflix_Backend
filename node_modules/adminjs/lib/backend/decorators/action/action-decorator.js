@@ -303,6 +303,11 @@ class ActionDecorator {
   hasHandler() {
     return !!this.action.handler;
   }
+
+  showResourceActions() {
+    if (this.action.showResourceActions === undefined) return true;
+    return !!this.action.showResourceActions;
+  }
   /**
    * Serializes action to JSON format
    *
@@ -325,6 +330,7 @@ class ActionDecorator {
       resourceId,
       guard: this.action.guard ? this._admin.translateMessage(this.action.guard, resourceId) : '',
       showFilter: !!this.action.showFilter,
+      showResourceActions: this.showResourceActions(),
       component: this.action.component,
       showInDrawer: !!this.action.showInDrawer,
       hideActionHeader: !!this.action.hideActionHeader,
