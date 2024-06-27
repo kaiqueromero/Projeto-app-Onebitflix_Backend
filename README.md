@@ -37,16 +37,18 @@ And install the tools used if you don't have them already. 👇🏻 <br>
 
 
 
-##### first, run the development backend server:
+#### first, run the development backend server:
 
 npm run dev
 or
 yarn dev; <br>
+
 Open http://localhost:port with your browser to see the result.
 
-##### after that, run the front server:
+#### after that, run the front server:
 
 npm run dev
 or
 yarn dev; <br>
+
 Now, run the Frontend server and Open http://localhost:port with your browser to see the result.
